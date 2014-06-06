@@ -97,85 +97,183 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html,
+body {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+header {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+p,
+ul,
+ol,
+dl {
+	margin-bottom: 12px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 12px;
+}
+
+
+h2 {
+	font-size: 14px;
+	margin-right: 14px
+}
+
+.container {
+	width: 920px;
+}
+
+.top-contents {
+	text-align: right;
+}
+
+.menu-list {
+	padding: 24px;
+	background-color: #d7d7d7;
+
+}
+
+.menu-item {
+	overflow: hidden;
+	position: relative;
+	border-top: 1px solid #000;
+	padding-top: 23px;
+	margin-top: 24px;
+}
+
+.menu-item:first-child {
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+.dish-heading {
+	width: 80%;
+	margin-bottom: 0;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+
+.dish-desc {
+	width: 80%;
+	margin-bottom: 0;
+	font-style: italic;
+	font-size: 13.3px;
+	line-height: 18px;
+}
+
+.dish-price {
+	position: absolute;
+	top: 23px;
+	right: 0;
+	width: 10%;
+	text-align: right;
+}
+
+.menu-item:first-child .dish-price {
+	top: 0;
+	
+}
+
+
 /* Nav Object */
 
 .nav {
 	list-style: none;
 }
 
-.nave,
+.nav, 
 .nav > li {
+	
 	display: inline-block;
 	padding: 0;
 	margin: 0;
-
 }
 
 .nav a {
 	display: block;
 }
 
+.masthead {
+	background: url(../img/header-image.jpg) left top no-repeat;
+	width: 920px;
+	height: 298px;
+}	
+
 .masthead-brand a{
 	display: block;
-	width: 220px;
-	height: 344px;
-	overflow: hidden;
-	background: url(../img/logo-parts_and_labor.jpg) left top no-repeat;
+	height: 150px;
+	width: 100px;
+	/* overflow: hidden; */
+	background: url(../img/logo.png) left top no-repeat;
 	background-size: cover;
+	margin-top: 128px;
+	margin-left: 20px;
 }
 
 .masthead-brand a:before {
-	content: '';
+	content:"";
 	display: block;
-	width: 0;
+	width: 0%;
 	height: 150%;
 }
 
-
 .masthead-nav,
 .masthead-social {
-		text-align: right;	
-
+		text-align: right;
 }
 
 .masthead .masthead-nav {
 	float: right;
 	padding-top: 36px;
-	margin-right: 0;
-	font-family: 'bearpawregular', cursive;
-	font-size: 32px;
+	margin: right: 0;
+	font-family: '20_dbregular', cursive;
 }
-
 
 .masthead .masthead-social {
 	float: none;
 	position: absolute;
 	top: 0;
 	right: 0;
-	
 }
 
 .masthead-social a {
 	display: block;
 	width: 32px;
-	height: 32px;	
+	height: 32px;
 	background-repeat: no-repeat;
-	background-image: url(../img/sprites.png);
+	background-image: url(../img/sprites.png)
 	
 }
 
 .social-twitter {
-	background-position: -96px ,0;
+	background-position: -96px 0; 
 }
 
 .social-instagram {
-	background-position: -48px,0;
+	background-position: -48px 0;
 }
 
 .social-facebook {
-
 }
-
 
 
 /* ==========================================================================
