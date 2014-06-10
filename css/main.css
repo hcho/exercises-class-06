@@ -103,11 +103,6 @@ body {
 	line-height: 24px;
 }
 
-header {
-	margin-top: 20px;
-	margin-right: 20px;
-}
-
 p,
 ul,
 ol,
@@ -132,12 +127,17 @@ h2 {
 	margin-right: 14px
 }
 
-.container {
-	width: 920px;
+h6{
+	text-align: right;	
 }
+
 
 .top-contents {
 	text-align: right;
+}
+
+.container .menu-content {
+	float: right;
 }
 
 .menu-list {
@@ -213,9 +213,10 @@ h2 {
 }
 
 .masthead {
-	background: url(../img/header-image.jpg) left top no-repeat;
-	width: 920px;
 	height: 298px;
+	margin-top: 20px;
+	background: url(../img/header-image.jpg) left top no-repeat;
+	background-size: cover;
 }	
 
 .masthead-brand a{
@@ -246,6 +247,10 @@ h2 {
 	padding-top: 36px;
 	margin: right: 0;
 	font-family: '20_dbregular', cursive;
+}
+
+.masthead-nav li {
+	margin-left: 200px;
 }
 
 .masthead .masthead-social {
