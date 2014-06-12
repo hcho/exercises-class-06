@@ -114,7 +114,6 @@ dl {
 
 .tel {
 	text-align: right;
-	margin-right: 285px;
 	margin-top: 10px;
 	font-size: 25px;;
 }
@@ -154,14 +153,21 @@ h7 {
 	text-align: right;
 }
 
+.menu-heading {
+	text-align: center;
+	font-size: 20px;
+	font-family: helvetica, arial, sans-serif;	
+	font-weight: bold;
+}
+
 .container .menu-content {
 	float: right;
 }
 
-.menu-list {
+.menu-nav,
+.menu-section {
 	padding: 24px;
 	background-color: #d7d7d7;
-
 }
 
 .menu-item {
@@ -179,16 +185,26 @@ h7 {
 	margin-top: 0;
 }
 
+.menu-nav a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
 
+.menu-nav a,
 .dish-heading {
-	width: 80%;
-	margin-bottom: 0;
 	font-family: helvetica, arial, sans-serif;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 18px;
 	letter-spacing: .2em;
 	text-transform: uppercase;
+}
+
+
+.dish-heading {
+	width: 80%;
+	margin-bottom: 0;
 }
 
 .dish-desc {
@@ -232,10 +248,12 @@ h7 {
 }
 
 .masthead {
+	position: relative;
 	height: 298px;
 	margin-top: 20px;
 	background: url(../img/header-image.jpg) left top no-repeat;
 	background-size: cover;
+	
 }	
 
 .masthead-brand a{
@@ -275,8 +293,8 @@ h7 {
 .masthead .masthead-social {
 	float: none;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 20px;
+	right: 20px;
 }
 
 .masthead-social a {
@@ -297,6 +315,19 @@ h7 {
 }
 
 .social-facebook {
+}
+
+.container .reservations {
+	float: right;
+	margin-right: 0;
+	text-align: right;
+	background: pink;
+}
+
+.container .column, .container .columns {
+	display: inline;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 
