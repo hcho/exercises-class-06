@@ -115,7 +115,7 @@ dl {
 .tel {
 	text-align: right;
 	margin-top: 10px;
-	font-size: 25px;;
+	font-size: 20px;
 }
 
 h1,
@@ -229,6 +229,7 @@ h7 {
 }
 
 
+
 /* Nav Object */
 
 .nav {
@@ -321,7 +322,7 @@ h7 {
 	float: right;
 	margin-right: 0;
 	text-align: right;
-	background: pink;
+	background: white;
 }
 
 .container .column, .container .columns {
@@ -329,6 +330,7 @@ h7 {
 	margin-left: 0;
 	margin-right: 0;
 }
+
 
 
 /* ==========================================================================
