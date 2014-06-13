@@ -138,15 +138,17 @@ h3 {
 	font-size: 18px;
 }
 
+h5 {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-style: bold;
+}
+
 h6 {
 	text-align: right;
-	font-color: red;
 	font-size: 28px;
 }
 
-h7 {
-	text-align: right;
-}
 
 
 .top-contents {
@@ -155,7 +157,7 @@ h7 {
 
 .menu-heading {
 	text-align: center;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: helvetica, arial, sans-serif;	
 	font-weight: bold;
 }
@@ -170,13 +172,13 @@ h7 {
 	background-color: #d7d7d7;
 }
 
+
 .menu-item {
 	overflow: hidden;
 	position: relative;
 	border-top: 1px solid #000;
 	padding-top: 23px;
 	margin-top: 24px;
-	font-size: 15px;
 }
 
 .menu-item:first-child {
@@ -195,14 +197,13 @@ h7 {
 .dish-heading {
 	font-family: helvetica, arial, sans-serif;
 	font-weight: bold;
-	font-size: 16px;
 	line-height: 18px;
-	letter-spacing: .2em;
 	text-transform: uppercase;
 }
 
 
 .dish-heading {
+	font-size: 16px;
 	width: 80%;
 	margin-bottom: 0;
 }
@@ -221,6 +222,7 @@ h7 {
 	right: 0;
 	width: 10%;
 	text-align: right;
+	color: red;
 }
 
 .menu-item:first-child .dish-price {
@@ -329,6 +331,23 @@ h7 {
 	display: inline;
 	margin-left: 0;
 	margin-right: 0;
+}
+
+.hour {
+	font-size: 12px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.sidebar-navigation li {
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.sidebar-navigation.stuck {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 
