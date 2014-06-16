@@ -58,7 +58,7 @@
 
 			<div class="content row">
 				
-				<div class="section" id="menu">
+				<div class="section clearfix" id="menu">
 					
 					<div class="sidebar columns three alpha">
 						<nav class="sidebar-navigation">
@@ -744,6 +744,8 @@
 		<script src="js/vendor/waypoints-sticky.min.js"></script>
         <script>
 			$(function (){
+				var scrolled = false;
+				
 				$('.sidebar-navigation').localScroll({
 					aixs: 'y',
 					hash: true,
@@ -759,8 +761,18 @@ var menuLists = $('.menu-list').hide();
 				});
 */
 				$('#menu').waypoint(function(direction){
-					$('.sidebar-navigation').wrap('<div class="sticky-wrap"></div>').toggleClass('stuck');
-				})
+					if (scrolled === false) {
+						$('.sidebar').wrapInner('<div class="sticky-wrap container"><div class="three columns"></div></div>').toggleClass('stuck');
+						scrolled = true;
+					} else {
+						$('.sidebar').toggleClass('stuck');
+					}
+				});
+				$('#directions').waypoint(function (direction) {
+					$('.sidebar').toggleClass('stuck');
+				}, {
+					offset: '90%'
+				});
 			});
 		</script>
       
