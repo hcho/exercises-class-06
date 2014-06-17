@@ -149,9 +149,8 @@ h6 {
 	font-size: 50px;
 	color: red;
 	text-align: center;
-	margin-right: 50%;
-
 }
+
 
 
 
@@ -183,6 +182,11 @@ h6 {
 	border-top: 1px solid #000;
 	padding-top: 23px;
 	margin-top: 24px;
+}
+
+.menu-nav li a:hover {
+	font-size: 30px;
+	line-height: 35px;
 }
 
 .menu-item:first-child {
@@ -332,6 +336,12 @@ h6 {
 	margin-right: 0;
 	text-align: right;
 	background: white;
+	padding-right: 145px;
+}
+
+.reservations-heading {
+	color: red;
+	font-size: 42px;
 }
 
 .container .column, .container .columns {
