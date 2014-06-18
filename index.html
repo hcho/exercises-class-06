@@ -37,11 +37,11 @@
 		
 				<nav class="masthead-social four columns omega">
 					<ul class="nav">
-						<li><a class="social-twitter ir" href="#">Social 1</a></li>
+						<li><a class="social-twitter ir" target="_blank" href="https://twitter.com/partslabor">Social 1</a></li>
 						
-						<li><a class="social-facebook ir" href="#">Social 2</a></li>
+						<li><a class="social-facebook ir" target="_blank" href="https://www.facebook.com/pages/Parts-Labor/669500293094417">Social 2</a></li>
 						
-						<li><a class="social-instagram ir" href="#">Social 3</a></li>
+						<li><a class="social-instagram ir" target="_blank" href="http://instagram.com/partslabor">Social 3</a></li>
 					</ul>
 				</nav>
 		    </header>
@@ -50,8 +50,8 @@
 		
 					<ul class="nav">
 						<li><a href="#menu">Menu</a></li>
-						<li><a href="#">Direction</a></li>
-						<li><a href="#">reservation&info</a></li>
+						<li><a href="#directions">Direction</a></li>
+						<li><a href="#reservation">reservation&info</a></li>
 					</ul>
 			</nav>
 			
@@ -721,14 +721,14 @@
 													
 			<footer class="footer row">
 		    	<div class="hour contents three columns">
-			    	<h5>Butcher shop hour</h5>
-					<p class="hour">Mon-Sun 11 AM-7PM</p>
-				    <h5>Restaurant Hour</h5>
+			    	<div class="hours"><h5>Butcher shop hour</h5>
+					<p class="hour">Mon-Sun 11 AM-7PM</p></div>
+				    <div class="hours"><h5>Restaurant Hour</h5>
 				    <p class= "hour">Sun-Thur 5-10PM</p>
-				    <p class= "hour">Fri-Sat 5-11PM</p>
+				    <p class= "hour">Fri-Sat 5-11PM</p></div>
 			    </div>
-			    <div class="reservations eight columns">
-			    	<p class="reservations-heading">Get your seat now!!! <a class="button reservations-button" href="#" style="display: inline;">Click Here</a></p>
+			    <div class="reservations eight columns" id="reservation">
+			    	<p class="reservations-heading">GET YOUR<br>SEAT NOW!<a class="button reservations-button" href="#" style="display: inline;"><br>MAKE A RESERVATION</a></p>
 			
 			    </div>
 		    </footer>
@@ -746,7 +746,7 @@
 			$(function (){
 				var scrolled = false;
 				
-				$('.sidebar-navigation').localScroll({
+				$('.sidebar-navigation, .masthead-nav').localScroll({
 					aixs: 'y',
 					hash: true,
 					duration: 1000,
