@@ -338,15 +338,14 @@ h6 {
 .container {
 	float: right;
 	margin-right: 0;
-	background: white;
 	padding-right: 145px;
 }
 
 .reservations {
 	float: right;
 	margin-right: 0;
+	padding-left: 100px;
 	text-align: center;
-	background: #dbdbdb;
 	padding-right: 145px;
 }
 
@@ -368,11 +367,18 @@ h6 {
 }
 
 .hour {
-	font-size: 12px;
+	font-size: 14px;
 	font-family: helvetica, arial, sans-serif;
+	padding: inherit;
+	line-height: 8px;
 }
 
-
+.button {
+	padding: 10px;
+	margin: 10px;
+	font-size: 45px;
+	position: static;
+}
 
 .sidebar-navigation li {
 	padding-top: 5px;
